@@ -1,0 +1,48 @@
+h2 {
+  color: black;
+  background-color: white;
+}
+.background {
+  background-color: black;
+  width: 90%;
+  text-align: center;
+  color: black;
+  padding: 25px;
+}
+.nav {
+  color: black;
+  padding: 30px;
+}
+
+.butt {
+  padding: 10px;
+}
+
+.kristenflowers {
+  width: 100%;
+  border-radius: 50px;
+  border: 15px solid black;
+  background-color: white;
+  margin: 0px auto;
+
+}
+
+.left {
+  float: left;
+}
+
+.stack {
+  text-align: left;
+  color: white;
+  width: 50%;
+}
+
+.grey {
+  background-color: yellow;
+  padding: 25px;
+  width: 90%;
+}
+
+hr{
+  border-color: black;
+}
