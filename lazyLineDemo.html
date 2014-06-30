@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swirl-ly</title>
+  <link rel="stylesheet" href="css/swirlStyles.css">
+  <script src="js/libraries/jquery-1.11.1.min.js"></script>
+  <script src="js/libraries/raphael-2.1.2.min.js"></script>
+  <script src="js/libraries/lazylinepainter-1.4.1.js"></script>
+</head>
+<body>
+
+<script>
+
+    /*
+ * Lazy Line Painter - Path Object
+ * Generated using 'SVG to Lazy Line Converter'
+ *
+ * http://lazylinepainter.info
+ * Copyright 2013, Cam O'Connell
+ *
+ */
+
+var pathObj = {
+    "swirl2": {
+        "strokepath": [
+            {
+                "path": "m 17.172594,23.228407 c 1.21554,2.025897 -2.131165,2.638029 -3.367174,2.020307 -3.34951,-1.67399 -2.784001,-6.35896 -0.673439,-8.754656 3.7753,-4.285337 10.528023,-3.209755 14.142136,0.673429 5.303857,5.698728 3.663492,14.759195 -2.020296,19.529617 C 17.678224,43.055326 6.2406779,40.827179 0.3367224,33.32994 -7.092803,23.89543 -4.2667667,10.051817 5.0507544,3.0253609 16.335521,-5.4846194 32.600107,-2.0555331 40.742814,9.0862606 50.338714,22.216479 46.303624,40.910744 33.335047,50.165802 18.362311,60.851132 -2.7671723,56.208202 -13.131975,41.411166 -24.909122,24.597834 -19.657136,1.0293841 -3.0304721,-10.443336 15.622132,-23.313995 41.632205,-17.452106 54.211512,1.0050341 68.176926,21.495958 61.704523,49.949608 41.416273,63.634499",
+                "duration": 1400
+            }
+        ],
+        "dimensions": {
+            "width": 100,
+            "height": 100
+        }
+    }
+};
+
+
+/*
+ Setup and Paint your lazyline!
+ */
+
+ $(document).ready(function(){
+ $('#swirl2').lazylinepainter(
+ {
+    "svgData": pathObj,
+    "strokeWidth": 2,
+    "strokeColor": "#e09b99"
+}).lazylinepainter('paint');
+ });
+
+</script>
+
+<div id="swirl2"></div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+  padding: 0px;
+  background-color: grey;
+}
+
+.treeAndMe {
+width: 80%;
+float: right;
+}
+
+ img {
+  width: 100%;
+ }
+
+.nav {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 5%;
+}
+
+.nav-button {
+  background-color: black;
+  color: white;
+  height: 50px;
+  margin-left: 10%;
+  border: none;
+
+}
+
+.hard-coded {
+  width: 95%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.stack {
+  position: relative;
+  top: -1745px;
+}
+
+.line-it-up {
+  height: 175px;
+  position: relative;
+  top: -1020px;
+  left: 30px;
+  zoom: .7;
+  background-color: grey;
+  width: 330px;
+  padding: 10px;
+}
+
+.liup-home {
+  height: 175px;
+  width: 90px;
+  float: left;
+}
+
+.liup-search {
+  height: 175px;
+  width: 220px;
+  float: left;
+  margin-left: 10px;
+}
+
+.end {
+  background-color: black;
+  height: 15px;
+  position: relative;
+  top: -200px;
+}
+
+.web-links {
+  position: relative;
+  font-family: American Typewriter;
+  text-align: right;
+  right: 80px;
+  top: -800px;
+
+}
