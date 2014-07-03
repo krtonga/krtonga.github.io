@@ -1,82 +1,148 @@
-body {
-  padding: 0px;
-  background-color: grey;
+body, html {
+  background-color: lightgrey;
+  height: 100%;
 }
-
-.treeAndMe {
-width: 80%;
-float: right;
-}
-
- img {
-  width: 100%;
- }
 
 .nav {
   background-color: black;
-  width: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
-  padding-left: 5%;
+  width: 100%;
+  height: 30px;
+  padding: 15px;
+  margin: -10px;
+  z-index: 1000;
 }
 
 .nav-button {
   background-color: black;
+  position: 0 auto;
+  width: 24%;
   color: white;
-  height: 50px;
-  margin-left: 10%;
   border: none;
-
 }
 
-.hard-coded {
-  width: 95%;
-  margin: 0 auto;
+.window-frame {
   background-color: white;
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
 }
 
-.stack {
+.tree-frame {
   position: relative;
-  top: -1745px;
+  height: 500px;
 }
 
-.line-it-up {
-  height: 175px;
+.text {
+  position: absolute;
+  top: 140px;
+  left: 11%;
+  margin: 10px;
+  width: 125px;
+  z-index: 3
+}
+
+.tree {
+  position: absolute;
+  top: 50px;
+  right: -5px;
+  width: 75%;
+  z-index: 2;
+}
+
+.roots {
+  position: absolute;
+  top: 475px;
+  right: 0px;
+  width: 20%;
+  z-index: 20;
+}
+
+.roots-blob {
+  position: absolute;
+  top: 620px;
+  right: -10px;
+  width: 15%;
+  z-index: 20;
+}
+
+.dashed-lines {
+  position: absolute;
+  top: 50px;
+  right: 61%;
+  width: 30%;
+  z-index: 1;
+}
+
+.grey-blob {
+  position: absolute;
+  width: 20%;
+  zoom: .25;
+  z-index: 0;
+  top: -100px;
+  left: 0px;
+}
+
+.leaves {
+  position: absolute;
+  width: 10%;
+  top: 150px;
+  right: 54%;
+}
+
+.apple,.apple-blob {
+  position: absolute;
+  zoom: .5;
+  top: 350px;
+  right: 57%;
+  z-index: 15;
+}
+
+.apple-line {
+  position: absolute;
+  zoom: .5;
+  top: 400px;
+  right: 53%;
+  z-index: 15;
+}
+
+.apple-after {
+  position: absolute;
+  top: 650px;
+  right: 50%;
+  z-index: 15;
+}
+
+.portfolio-options {
   position: relative;
-  top: -1020px;
-  left: 30px;
-  zoom: .7;
+  height: 206px;
+  float: left;
+  width: 90%;
+  z-index: 14;
+}
+
+.portfolio-blob {
+  position: absolute;
+  width: 100%;
+}
+
+.paper,.code {
+  position: relative;
+  width: 30%;
+  margin: 25px;
+  margin-left: 100px;
+}
+
+.portfolio {
   background-color: grey;
-  width: 330px;
-  padding: 10px;
-}
-
-.liup-home {
-  height: 175px;
-  width: 90px;
-  float: left;
-}
-
-.liup-search {
-  height: 175px;
-  width: 220px;
-  float: left;
-  margin-left: 10px;
-}
-
-.end {
-  background-color: black;
-  height: 15px;
   position: relative;
-  top: -200px;
+  height: 300px;
+  top: 180px;
+  z-index: 0;
 }
 
-.web-links {
-  position: relative;
-  font-family: American Typewriter;
-  text-align: right;
-  right: 80px;
-  top: -800px;
-
+.print, .web {
+  display: none;
 }
+
+
