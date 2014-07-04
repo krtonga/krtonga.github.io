@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="213"
+   height="406"
+   id="svg5294"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="treeLines.svg"
+   style="overflow:hidden; postion: relative;">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="0.58128079"
+     inkscape:cx="106.5"
+     inkscape:cy="203"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg5294" />
+  <desc
+     style="-webkit-tap-highlight-color: rgba(0,0,0,0);"
+     id="desc3">Created with Inkscape</desc>
+  <defs
+     style="-webkit-tap-highlight-color: rgba(0,0,0,0);"
+     id="defs5" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path6038"
+     d="M 163.3104,-0.5817914 C 212.35821,400.9422 212.35821,404.1803 212.35821,404.1803 l 0,0 z"
+     style="fill:none;stroke:#cccccc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:export-filename="/Users/krtonga/bash/code/projects/krtonga.github.io/public/VERS1bw.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+  <path
+     style="fill:none;stroke:#cccccc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     d="M 3.310387,-0.5817914 C 52.358196,400.9422 52.358196,404.1803 52.358196,404.1803 l 0,0 z"
+     id="path6040"
+     inkscape:connector-curvature="0"
+     inkscape:export-filename="/Users/krtonga/bash/code/projects/krtonga.github.io/public/VERS1bw.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path6042"
+     d="M 140.45326,-0.5817914 C 189.50107,400.9422 189.50107,404.1803 189.50107,404.1803 l 0,0 z"
+     style="fill:none;stroke:#cccccc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:export-filename="/Users/krtonga/bash/code/projects/krtonga.github.io/public/VERS1bw.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+  <path
+     style="fill:none;stroke:#cccccc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     d="M 9.153436,46.689819 C 171.7498,71.666379 171.7498,71.867799 171.7498,71.867799 l 0,0 z"
+     id="path6044"
+     inkscape:connector-curvature="0"
+     inkscape:export-filename="/Users/krtonga/bash/code/projects/krtonga.github.io/public/VERS1bw.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+  <text
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+     x="-35"
+     y="500"
+     id="text3998"
+     sodipodi:linespacing="125%"
+     transform="translate(0,-432.63782)"><tspan
+       sodipodi:role="line"
+       id="tspan4000"
+       x="-35"
+       y="500" /></text>
+</svg>
