@@ -193,11 +193,22 @@ body, html {
 }
 
 .paper {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .code {
-  margin-top: 10px;
+  margin-top: 0px;
+}
+
+.black-box {
+  position: relative;
+  background-color: black;
+  height: 30px;
+  width: 750px;
+  top: -240px;
+  z-index: -2;
+  border-bottom-right-radius: 30px;
+  display: none;
 }
 
 .portfolio {
@@ -264,4 +275,73 @@ body, html {
   top: -80px;
   margin: 5px;
   height: 90%;
+}
+
+.resume-frame {
+  height: 750px;
+  background-color: white;
+  /*background-image: url(https://scontent-b-ord.xx.fbcdn.net/hphotos-prn2/t1.0-9/556527_10201656207262682_3025096_n.jpg);
+  background-image: url(https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/537007_10201656191622291_1833575693_n.jpg);*/
+  /*background-image: url(https://scontent-b-ord.xx.fbcdn.net/hphotos-frc3/t1.0-9/1229993_10201656201342534_1049436629_n.jpg);*/
+);
+
+}
+
+.frame-left {
+  zoom: .7;
+  left: 36px;
+  top: 50px;
+}
+
+.namorada {
+  position: relative;
+  left: 25px;
+  width: 300px;
+}
+
+.frame-right {
+  position: relative;
+  left: 20px;
+}
+
+.wave {
+  position: relative;
+  top: -100px;
+}
+.wave2 {
+  position: relative;
+  top: -110px;
+  left: 445px;
+}
+.wave3 {
+  position: relative;
+  left: 300px;
+}
+.fishes {
+  position: relative;
+  top: -300px;
+  left: 250px;
+}
+.fish-line {
+  position: relative;
+  top: -659px;
+  left: -63px;
+}
+.resume {
+  position: relative;
+  top: -550px;
+  left: -100px;
+  height: 120px;
+}
+
+.net {
+  position: relative;
+  top: -725px;
+  left: 50px;
+}
+
+.dashed-lines-reversed {
+  position: relative;
+  top: -950px;
+  left: 200px;
 }

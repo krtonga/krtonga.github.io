@@ -20,25 +20,23 @@
 <body>
 
   <div class="nav sixteen columns">
-    <button class="nav-button">About</button>
-    <button class="nav-button">Portfolio</button>
-    <button class="nav-button">Resume</button>
-    <button class="nav-button">Contact</button>
+    <a href=".tree-frame"><button class="nav-button">About</button></a>
+    <button class="nav-button"><a href=".portfolio-options">Portfolio</a></button>
+    <button class="nav-button"><a href=".resume-frame">Resume</a></button>
+    <button class="nav-button"><a href=".contact">Contact</a></button>
   </div>
 
   <div class="window-frame container ">
-    <button class="show-all">Just show me!</button>
+    <button class="show-all">Skip Animation!</button>
 
     <div class="tree-frame">
       <div id="treeAndMeBW" class="tree"></div>
       <div id="treeLines" class="dashed-lines"></div>
       <div id="roots" class="roots"></div>
-
       <img src="public/stack.png" alt="" class="text">
       <img src="public/roots-blob.png" alt="" class="roots-blob">
       <img src="public/grey_blob.png" alt="" class="grey-blob">
       <img src="public/dotted-line.png" alt="" class="dotted-line">
-
       <div id="apple" class="apple"></div>
       <img src="public/leaves.png" alt="" class="leaves">
       <img src="public/apple-blob.png" alt="" class="apple-blob">
@@ -46,10 +44,12 @@
     </div>
 
     <img src="public/text3100.png" alt="" class="text-portfolio">
+
     <div class="portfolio-options">
       <img src="public/paper.png" alt="" class="paper">
       <img src="public/code.png" alt="" class="code">
       <img src="public/portfolio-blob.png" alt="" class="portfolio-blob">
+      <div class="black-box"></div>
     </div>
 
     <div class="portfolio web">
@@ -92,9 +92,22 @@
 
     </div>
 
-    <div class="resume">
-      <img src="public/namorada-krtonga.jpg" alt="">
-      <img src="public/resume.png" alt="">
+    <div class="resume-frame">
+
+      <div id="frame-left"></div>
+      <img src="public/namorada-krtonga.jpg" alt="" class="namorada">
+      <img src="public/vectors/frame-right.svg" alt="" class="frame-right">
+      <div id="wave-blue" class="wave2"></div>
+      <img src="public/vectors/wave.svg" alt="" class='wave1'>
+      <!-- <img src="public/vectors/wave.svg" alt="" class='wave2'> -->
+      <img src="public/vectors/wave.svg" alt="" class='wave3'>
+
+
+      <img src="public/vectors/fishes.svg" alt="" class="fishes">
+      <img src="public/vectors/fish-line.svg" alt="" class="fish-line">
+      <img src="public/resume.png" alt="" class="resume">
+      <img src="public/vectors/net.svg" alt="" class="net">
+      <img src="public/vectors/dashed-lines.svg" alt="" class="dashed-lines-reversed">
     </div>
     <div class="contact">
       hello.

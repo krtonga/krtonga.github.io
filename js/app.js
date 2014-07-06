@@ -17,31 +17,43 @@
       "svgData": root,
       "strokeWidth": 2,
       "strokeColor": "#e09b99"
-    }).lazylinepainter('paint')
+    }).lazylinepainter('paint');
 
   $( ".roots-blob" ).delay(2000).show("fade", 2000, function() {
     $( ".text" ).show("drop", 4000, function(){
-
-      $(".leaves").show("fade", 2000, function(){
-        $('#apple').lazylinepainter({
-          "svgData": apple,
-          "strokeWidth": 1,
-          "strokeColor": "#000000"
-        }).lazylinepainter('paint');
-
-        $(".text-portfolio").delay(2000).show("fade", 5000);
-        $(".apple-blob").show("fade", 2000, function(){
-            $(".grey-blob").show("fade", 2000, function(){
-              $( ".portfolio-blob" ).delay(500).show("fade", 2000);
-              $( ".paper" ).show("drop", {direction:"up"}, 1000, function(){
-                $( ".code" ).show("drop", {direction: "up"}, 1000)
-
-            })
-          })
+      $(".text-portfolio").show("fade", 3000, function(){
+        $(".grey-blob").show("fade", 1000);
+        $( ".portfolio-blob" ).delay(200).show("fade", 2000);
+        $( ".paper" ).show("drop", {direction:"up"}, 1000, function(){
+            $( ".code" ).show("drop", {direction: "up"}, 1000, function(){
+              $(".leaves").show("fade", 2000, function(){
+                $('#apple').lazylinepainter({
+                    "svgData": apple,
+                    "strokeWidth": 1,
+                    "strokeColor": "#000000"
+                }).lazylinepainter('paint');$(".apple-blob").show("fade", 2000, function(){
+                $( ".black-box" ).show("fade", 2000);
+              });
+            });
+          });
         });
       });
-    })
-  })
+    });
+
+
+  $('#frame-left').lazylinepainter({
+    "svgData": frameLeft,
+    "strokeWidth": 2,
+    "strokeColor": "#e09b99"
+  }).lazylinepainter('paint');
+
+});
+
+
+
+
+
+
 
   $('.paper').on({
     mouseenter: function(){
@@ -53,9 +65,9 @@
         backgroundColor: "transparent"
       },200);
     }, click: function(){
-      $(".web").hide(),
-      $(".code").removeClass("open"),
-      $(".print").toggle("drop", 1000),
+      $(".web").hide("drop", 1000),
+      $(".code").removeClass("open", 500),
+      $(".print").toggle("drop", {direction: "down"}, 1000),
       $(".paper").toggleClass( "open", 1000)
     }
   })
@@ -109,8 +121,10 @@
       $(".apple-blob").show("fade", 100);
       $(".grey-blob").show("fade", 100);
       $( ".portfolio-blob" ).show("fade", 100);
-      $( ".paper" ).show("drop", {direction:"up"}, 100);
-      $( ".code" ).show("drop", {direction: "up"}, 100);
+      $( ".paper" ).show("drop", {direction:"up"}, 500, function(){
+        $( ".code" ).show("drop", {direction: "up"}, 500);
+      });
+
     }
   })
 
