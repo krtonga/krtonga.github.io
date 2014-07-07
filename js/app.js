@@ -67,7 +67,7 @@
     }, click: function(){
       $(".web").hide("drop", 1000),
       $(".code").removeClass("open", 500),
-      $(".print").toggle("drop", {direction: "down"}, 1000),
+      $(".print").toggle("drop", 1000),
       $(".paper").toggleClass( "open", 1000)
     }
   })
