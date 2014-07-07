@@ -150,7 +150,7 @@ body, html {
 
 .dotted-line {
   position: relative;
-  top: 365px;
+  top: 350px;
   width: 90%;
 }
 
@@ -197,14 +197,21 @@ body, html {
 }
 
 .code {
-  margin-top: 0px;
+  margin-top: -7px;
+  border-bottom-right-radius: 20px;
+  border-bottom: 10px solid transparent;
+}
+
+.open {
+  border: 2px dotted black;
+  border-bottom-style: solid;
 }
 
 .black-box {
   position: relative;
   background-color: black;
   height: 30px;
-  width: 750px;
+  width: 800px;
   top: -240px;
   z-index: -2;
   border-bottom-right-radius: 30px;
@@ -220,6 +227,7 @@ body, html {
 }
 
 .print, .web {
+  position: relative;
   display: none;
 }
 
@@ -231,10 +239,6 @@ body, html {
 .web {
   background-color: black;
   border-top: 50px solid limegreen;
-}
-
-.open {
-  border: 2px dotted black;
 }
 
 .portrait {
@@ -265,8 +269,8 @@ body, html {
 
 .line-it-up {
   height: 90%;
-  background-color: grey;
-  width: 500px;
+  background-color: #003300;
+  width: 450px;
 }
 
 .liup-home, .liup-search {
@@ -278,6 +282,8 @@ body, html {
 }
 
 .resume-frame {
+  position: relative;
+  display: inline-block;
   height: 750px;
   background-color: white;
   /*background-image: url(https://scontent-b-ord.xx.fbcdn.net/hphotos-prn2/t1.0-9/556527_10201656207262682_3025096_n.jpg);

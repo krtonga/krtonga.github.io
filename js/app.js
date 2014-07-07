@@ -21,7 +21,7 @@
 
   $( ".roots-blob" ).delay(2000).show("fade", 2000, function() {
     $( ".text" ).show("drop", 4000, function(){
-      $(".text-portfolio").show("fade", 3000, function(){
+      $(".text-portfolio").show("fade", 1000, function(){
         $(".grey-blob").show("fade", 1000);
         $( ".portfolio-blob" ).delay(200).show("fade", 2000);
         $( ".paper" ).show("drop", {direction:"up"}, 1000, function(){
@@ -41,11 +41,22 @@
     });
 
 
-  $('#frame-left').lazylinepainter({
-    "svgData": frameLeft,
+  $(document).ready(function(){
+ $('#net').lazylinepainter(
+ {
+    "svgData": net,
+    "strokeWidth": 2,
+    "strokeColor": "#e09b99",
+    "strokeDash": "-"
+}).lazylinepainter('paint');
+
+ $('#fish-line').lazylinepainter(
+ {
+    "svgData": pathObj,
     "strokeWidth": 2,
     "strokeColor": "#e09b99"
-  }).lazylinepainter('paint');
+}).lazylinepainter('paint');
+ });
 
 });
 
@@ -77,20 +88,20 @@
   $('.code').on({
     mouseenter: function(){
       $(this).animate({
-        backgroundColor: "#88F78B"
+        backgroundColor: "#88F78B",
+        borderColor: "black"
       },200);
     }, mouseleave: function(){
       $(this).animate({
-        backgroundColor: "transparent"
+        backgroundColor: "transparent",
+        borderColor: "transparent"
       },1000);
     }, click: function(){
       $(".paper").removeClass("open", 500),
       $(".print").hide("drop", 600, function(){
         $(".code").toggleClass( "open", 1000),
         $(".web").toggle("drop", {direction: "right"}, 1000)
-
       })
-
     }
   })
 
@@ -125,7 +136,8 @@
       $(".text-portfolio").show("fade", 100);
       $(".apple-blob").show("fade", 100);
       $(".grey-blob").show("fade", 100);
-      $( ".portfolio-blob" ).show("fade", 100);
+      $(".portfolio-blob" ).show("fade", 100);
+      $(".black-box").show("fade", 200);
       $( ".paper" ).show("drop", {direction:"up"}, 500, function(){
         $( ".code" ).show("drop", {direction: "up"}, 500);
       });
