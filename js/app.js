@@ -65,10 +65,12 @@
         backgroundColor: "transparent"
       },200);
     }, click: function(){
-      $(".web").hide("drop", 1000),
       $(".code").removeClass("open", 500),
-      $(".print").toggle("drop", 1000),
-      $(".paper").toggleClass( "open", 1000)
+      $(".web").hide("drop", {direction: "right"}, 600, function(){
+        $(".paper").toggleClass( "open", 1000),
+        $(".print").toggle("drop", 1000)
+      })
+
     }
   })
 
@@ -82,10 +84,13 @@
         backgroundColor: "transparent"
       },1000);
     }, click: function(){
-      $(".print").hide("drop", 1000),
       $(".paper").removeClass("open", 500),
-      $(".web").toggle("drop", 1000),
-      $(".code").toggleClass( "open", 1000)
+      $(".print").hide("drop", 600, function(){
+        $(".code").toggleClass( "open", 1000),
+        $(".web").toggle("drop", {direction: "right"}, 1000)
+
+      })
+
     }
   })
 
