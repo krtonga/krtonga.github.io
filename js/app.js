@@ -26,12 +26,12 @@
         $( ".portfolio-blob" ).delay(200).show("fade", 2000);
         $( ".paper" ).show("drop", {direction:"up"}, 1000, function(){
             $( ".code" ).show("drop", {direction: "up"}, 1000, function(){
-              $(".leaves").show("fade", 2000, function(){
+              $(".leaves").show("fade", 1000, function(){
                 $('#apple').lazylinepainter({
                     "svgData": apple,
                     "strokeWidth": 1,
                     "strokeColor": "#000000"
-                }).lazylinepainter('paint');$(".apple-blob").show("fade", 2000, function(){
+                }).lazylinepainter('paint');$(".apple-blob").show("fade", 1000, function(){
                 $( ".black-box" ).show("fade", 2000);
               });
             });
@@ -41,25 +41,30 @@
     });
 
 
-  $(document).ready(function(){
- $('#net').lazylinepainter(
- {
+$(document).ready(function(){
+  $('#net').lazylinepainter({
     "svgData": net,
     "strokeWidth": 2,
     "strokeColor": "#e09b99",
     "strokeDash": "-"
-}).lazylinepainter('paint');
+  }).lazylinepainter('paint');
+  $('#fish-line').lazylinepainter({
+      "svgData": pathObj,
+      "strokeWidth": 2,
+      "strokeColor": "#e09b99"
+    }).lazylinepainter('paint');
+  });
 
- $('#fish-line').lazylinepainter(
- {
-    "svgData": pathObj,
-    "strokeWidth": 2,
-    "strokeColor": "#e09b99"
-}).lazylinepainter('paint');
- });
+var scrollToAnchor = function(elem){
+  var aTag = $("div[name='"+ elem +"']");
+  $('html,body').animate({'scrollTop': aTag.offset().top}, 'slow' );
 
+  $(".portfolio-button").click(function(){
+    console.log('clicky-clacky')
+    scrollToAnchor('portfolio-options')
+  });
+}
 });
-
 
 
 
