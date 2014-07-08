@@ -54,22 +54,22 @@ $(document).ready(function(){
       "strokeColor": "#e09b99"
     }).lazylinepainter('paint');
   });
-
-var scrollToAnchor = function(elem){
-  var aTag = $("div[name='"+ elem +"']");
-  $('html,body').animate({'scrollTop': aTag.offset().top}, 'slow' );
-
-  $(".portfolio-button").click(function(){
-    console.log('clicky-clacky')
-    scrollToAnchor('portfolio-options')
-  });
-}
 });
 
 
 
-
-
+  $(".nav-t").click(function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+  });
+  $(".nav-p").click(function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+  });
+  $(".nav-r").click(function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+  });
 
   $('.paper').on({
     mouseenter: function(){

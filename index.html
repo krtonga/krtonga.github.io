@@ -20,13 +20,13 @@
 <body>
 
   <div class="nav sixteen columns">
-    <a href=".tree-frame"><button class="nav-button">About</button></a>
-    <button class="nav-button portfolio-button">Portfolio</button>
-    <button class="nav-button resume-button">Resume</button>
+    <a href="#top" class="nav-t"><button class="nav-button">About</button></a>
+    <a href="#portfolio" class="nav-p"><button class="nav-button portfolio-button">Portfolio</button></a>
+    <a href="#resume" class="nav-r"><button class="nav-button resume-button">Resume</button></a>
     <button class="nav-button contact-button">Contact</button>
   </div>
 
-  <div class="window-frame container ">
+  <div class="window-frame container" id="top">
     <button class="show-all">Skip Animation!</button>
 
     <div class="tree-frame">
@@ -43,9 +43,9 @@
       <img src="public/apple-line.png" alt="" class="apple-line">
     </div>
 
-    <img src="public/text3100.png" alt="" class="text-portfolio">
+    <img src="public/text3100.png" alt="" class="text-portfolio" >
 
-    <div class="portfolio-options">
+    <div class="portfolio-options" id="portfolio">
       <img src="public/paper.png" alt="" class="paper">
       <img src="public/code.png" alt="" class="code">
       <img src="public/portfolio-blob.png" alt="" class="portfolio-blob">
@@ -85,7 +85,7 @@
 
     </div>
 
-    <div class="resume-frame">
+    <div class="resume-frame id="resume">
 
       <div id="frame-left"></div>
       <img src="public/namorada-krtonga.jpg" alt="" class="namorada">
