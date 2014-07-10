@@ -71,6 +71,19 @@ $(document).ready(function(){
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
   });
 
+  $('.resume').on({
+    mouseenter: function(){
+      $(this).animate({
+        height: "200px"
+      }, 1000)
+    },
+    mouseleave: function(){
+      $(this).animate({
+        height: "120px"
+      }, 1000)
+    }
+  })
+
   $('.paper').on({
     mouseenter: function(){
       $(this).animate({
@@ -86,7 +99,6 @@ $(document).ready(function(){
         $(".paper").toggleClass( "open", 1000),
         $(".print").toggle("drop", 1000)
       })
-
     }
   })
 
