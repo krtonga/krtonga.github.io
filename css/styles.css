@@ -31,8 +31,8 @@ body, html {
 .window-frame {
   background-color: white;
   width: 960px;
-  height: 200%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .tree-frame {
@@ -284,7 +284,8 @@ body, html {
 .resume-frame {
   position: relative;
   display: inline-block;
-  height: 750px;
+  height: 500px;
+  overflow: hidden;
   background-color: white;
   /*background-image: url(https://scontent-b-ord.xx.fbcdn.net/hphotos-prn2/t1.0-9/556527_10201656207262682_3025096_n.jpg);
   background-image: url(https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/537007_10201656191622291_1833575693_n.jpg);*/
@@ -343,12 +344,18 @@ body, html {
 
 .net {
   position: relative;
-  top: -925px;
-  left: 50px;
+  top: -1025px;
+  left: 70px;
 }
 
 .dashed-lines-reversed {
   position: relative;
   top: -1500px;
   left: 600px;
+}
+
+.contact {
+  background-color: black;
+  color: white;
+  height: 100px;
 }
