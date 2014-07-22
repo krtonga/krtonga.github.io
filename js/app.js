@@ -17,6 +17,22 @@
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
   });
 
+  function centerNavBar(){
+    var windowWidth = $( window ).width();
+    var newMargin = (windowWidth - 960)/2;
+    $('.nav').animate({marginLeft: newMargin}, 0);
+    $('.show-all').animate({marginRight: newMargin}, 0);
+  };
+
+  function closeDialog(){
+    $('.close-button').on({
+      click: function(){
+        $('.disclaimer').hide("fade", 200);
+      }
+    });
+  };
+
+
 // SKETCH ANIMATIONS
 function growAppleTrees(){
   drawTreeAndMe('paint');
@@ -28,9 +44,11 @@ function growAppleTrees(){
         $(".grey-blob").show("fade", 1000);
         $(".leaves").show("fade", 1000);
         $( ".portfolio-blob" ).delay(200).show("fade", 2000);
+        $(".web").delay(500).show("drop", {direction: "right"}, 1000)
         drawApple('paint');
-        $( ".paper" ).show("drop", {direction:"up"}, 1000, function(){
-          $( ".code" ).show("drop", {direction: "up"}, 1000, function(){$( ".black-box" ).show("fade", 2000);
+        $( ".code" ).show("drop", {direction: "up"}, 1000, function(){
+          $( ".paper" ).show("drop", {direction:"up"}, 1000, function(){
+            $( ".black-box" ).show("fade", 2000);
             $(".apple-blob").show("fade", 2000 );
           });
         });
@@ -69,25 +87,6 @@ function endAnimation(){
 
 
 // PORTFOLIO TABS & RESUME HOVER
-function paperTab(){
-  $('.paper').on({
-    mouseenter: function(){
-      $(this).animate({
-        backgroundColor: "#303759"
-      },1000);
-    }, mouseleave: function(){
-      $(this).animate({
-        backgroundColor: "transparent"
-      },200);
-    }, click: function(){
-      $(".code").removeClass("open", 500),
-      $(".web").hide("drop", {direction: "right"}, 600, function(){
-        $(".paper").toggleClass( "open", 1000),
-        $(".print").toggle("drop", 1000)
-      });
-    }
-  });
-};
 function codeTab(){
   $('.code').on({
     mouseenter: function(){
@@ -101,10 +100,29 @@ function codeTab(){
         borderColor: "transparent"
       },1000);
     }, click: function(){
-      $(".paper").removeClass("open", 500),
-      $(".print").hide("drop", 600, function(){
-        $(".code").toggleClass( "open", 1000),
-        $(".web").toggle("drop", {direction: "right"}, 1000)
+      $(".paper").removeClass("open", 100),
+      $(".print").hide("drop", 100, function(){
+        $(".code").toggleClass( "open", 100),
+        $(".web").toggle("drop", {direction: "right"}, 100)
+      });
+    }
+  });
+};
+function paperTab(){
+  $('.paper').on({
+    mouseenter: function(){
+      $(this).animate({
+        backgroundColor: "#303759"
+      },1000);
+    }, mouseleave: function(){
+      $(this).animate({
+        backgroundColor: "transparent"
+      },200);
+    }, click: function(){
+      $(".code").removeClass("open", 100),
+      $(".web").hide("drop", {direction: "right"}, 100, function(){
+        $(".paper").toggleClass( "open", 100),
+        $(".print").toggle("drop", 100)
       });
     }
   });
@@ -136,23 +154,30 @@ function updateBannerImagePosition(){
 };
 
 
+
+
 $(document).ready(function(){
   growAppleTrees();
   bringInTheNets();
   paperTab();
   codeTab();
+  closeDialog();
   $(".show-all").on({
     click: function(){
       endAnimation();
     }
   });
+  centerNavBar();
 });
 
 $(window).on('scroll', function(){
   var scrollTop = $(window).scrollTop();
   // fadeBackgroundColor();
-
-  if(scrollTop<100) // just to move somewhat
-   $('.apple-cage').css('left', scrollTop);
+  // if(scrollTop<100) // just to move somewhat
+  //  $('.apple-cage').css('left', scrollTop);
   updateBannerImagePosition();
+})
+
+$(window).resize(function(){
+  centerNavBar();
 })
