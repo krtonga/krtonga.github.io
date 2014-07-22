@@ -1,12 +1,14 @@
 /*
- * Lazy Line Painter - Path Object
- * Generated using 'SVG to Lazy Line Converter'
+ * NOTE ON ORGANIZATION:
+ * Section 1: The paths
+ * Section 2: The functions we use to draw them
  *
- * http://lazylinepainter.info
- * Copyright 2013, Cam O'Connell
+ * Thank you to Lazy Line Painter for helping turn svg's into animations -> http://lazylinepainter.info * Copyright 2013, Cam O'Connell
  *
  */
 
+
+// SECTION 1: THE PATHS
 var treeAndMe = {
     "treeAndMeBW": {
         "strokepath": [
@@ -319,4 +321,50 @@ var frameLeft = {
 };
 
 
+// SECTION 2: DRAW UM!!
 
+function drawTreeAndMe(action){
+    $('#treeAndMeBW').lazylinepainter({
+        "svgData": treeAndMe,
+        "strokeWidth": 2,
+        "strokeColor": "#e09b99",
+    }).lazylinepainter(action);
+};
+function drawTreeLines(action){
+    $('#treeLines').lazylinepainter({
+        "svgData": treeLines,
+        "strokeWidth": 2,
+        "strokeColor": "#d3d3d3",
+        "strokeDash": "--.",
+        "delay":1000
+    }).lazylinepainter(action);
+};
+function drawRoots(action){
+    $('#roots').lazylinepainter({
+        "svgData": root,
+        "strokeWidth": 2,
+        "strokeColor": "#e09b99"
+    }).lazylinepainter(action);
+};
+function drawApple(action){
+    $('#apple').lazylinepainter({
+        "svgData": apple,
+        "strokeWidth": 1,
+        "strokeColor": "#000000"
+    }).lazylinepainter(action);
+};
+function drawNet(action){
+    $('#net').lazylinepainter({
+        "svgData": net,
+        "strokeWidth": 2,
+        "strokeColor": "#e09b99",
+        "strokeDash": "-"
+    }).lazylinepainter(action);
+};
+function drawFishLine(action){
+    $('#fish-line').lazylinepainter({
+        "svgData": pathObj,
+        "strokeWidth": 2,
+        "strokeColor": "#e09b99"
+    }).lazylinepainter(action);
+};

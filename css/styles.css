@@ -359,3 +359,21 @@ body, html {
   color: white;
   height: 100px;
 }
+
+.information-block {
+  background-color: blanchedalmond;
+  height: 8em;
+  margin: 0;
+  padding: 0;
+}
+
+.image-banner {
+  height: 15em;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  position: relative;
+}
