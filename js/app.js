@@ -48,7 +48,7 @@ function growAppleTrees(){
         drawApple('paint');
         $( ".code" ).show("drop", {direction: "up"}, 1000, function(){
           $( ".paper" ).show("drop", {direction:"up"}, 1000, function(){
-            $( ".black-box" ).show("fade", 2000);
+            // $( ".black-box" ).show("fade", 2000);
             $(".apple-blob").show("fade", 2000 );
           });
         });

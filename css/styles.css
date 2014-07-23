@@ -39,12 +39,14 @@ body, html {
 .tree-frame {
   position: relative;
   height: 500px;
+  right: 50px;
+  zoom: .8;
 }
 
 .text {
   position: absolute;
   top: 140px;
-  left: 11%;
+ left: 170px;
   margin: 10px;
   width: 125px;
   z-index: 3;
@@ -69,8 +71,8 @@ body, html {
 
 .roots-blob {
   position: absolute;
-  top: 645px;
-  right: 0px;
+  top: 635px;
+  right: -23px;
   width: 15%;
   z-index: 20;
   display: none;
@@ -98,7 +100,7 @@ body, html {
   position: absolute;
   width: 10%;
   top: 150px;
-  right: 54%;
+  right: 44%;
   display: none;
 }
 
@@ -114,7 +116,7 @@ body, html {
   position: absolute;
   top: 120px;
   zoom: 1.3;
-  right: 57%;
+  right: 47%;
   z-index: 15;
 }
 
@@ -151,7 +153,7 @@ body, html {
 
 .dotted-line {
   position: relative;
-  top: 480px;
+  top: 470px;
   width: 90%;
 }
 
@@ -175,16 +177,17 @@ body, html {
 }
 .portfolio-blob {
   position: relative;
-  top: -215px;
+  top: -200px;
   width: 100%;
   display: inherit;
   display: none;
+  opacity: .8;
 }
 
 .paper,.code {
   position: relative;
   float: left;
-  width: 30%;
+  width: 25%;
   padding: 25px;
   margin-left: 75px;
   z-index: 10;
@@ -195,11 +198,11 @@ body, html {
 }
 
 .paper {
-  margin-top: 25px;
+  /*margin-top: 25px;*/
 }
 
 .code {
-  margin-top: -7px;
+  margin-top: -15px;
   padding-bottom: -7px;
   border-bottom: 10px solid transparent;
 }
