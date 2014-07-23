@@ -2,19 +2,19 @@
 // NAV BAR AUTO-SCROLL
   $(".nav-t").click(function(event){
     event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 'slow');
   });
   $(".nav-p").click(function(event){
-    event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    // event.preventDefault();
+      $('html,body').animate({scrollTop:$('.portfolio-blob').offset().top -50 }, 'slow')
   });
   $(".nav-r").click(function(event){
     event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 'slow');
   });
   $(".nav-c").click(function(event){
     event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 'slow');
   });
 
   function centerNavBar(){
@@ -100,6 +100,7 @@ function codeTab(){
         borderColor: "transparent"
       },1000);
     }, click: function(){
+      $('html,body').animate({scrollTop:$('.portfolio-blob').offset().top -50 }, 'slow'),
       $(".paper").removeClass("open", 100),
       $(".print").hide("drop", 100, function(){
         $(".code").toggleClass( "open", 100),
@@ -119,6 +120,7 @@ function paperTab(){
         backgroundColor: "transparent"
       },200);
     }, click: function(){
+      $('html,body').animate({scrollTop:$('.portfolio-blob').offset().top -50 }, 'slow'),
       $(".code").removeClass("open", 100),
       $(".web").hide("drop", {direction: "right"}, 100, function(){
         $(".paper").toggleClass( "open", 100),
