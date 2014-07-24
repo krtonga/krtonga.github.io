@@ -144,6 +144,7 @@ function resumeExpand(){
   });
 };
 
+
 // SCROLLEX
 function updateBannerImagePosition(){
   var scrollTop = $(window).scrollTop();
@@ -185,6 +186,11 @@ $(document).ready(function(){
     click: function(){
       endAnimation();
     }
+  });
+  $(".contact-me").click(function(event){
+    console.log('click')
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$('.contact').offset().top}, 'slow');
   });
   centerNavBar();
 });
