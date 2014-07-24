@@ -199,7 +199,7 @@ body, html {
   border-bottom: 10px solid transparent;
 }
 
-.black-box {
+/*.black-box {
   position: relative;
   background-color: black;
   height: 30px;
@@ -208,7 +208,7 @@ body, html {
   z-index: -2;
   border-bottom-right-radius: 30px;
   display: none;
-}
+}*/
 
 .portfolio {
   background-color: grey;
@@ -223,18 +223,6 @@ body, html {
   background-color: #C39873;
   border-top: 50px solid black;
   display: none;
-}
-
-.web {
-  position: relative;
-  background-color: black;
-  color: white;
-  border-top: 50px solid limegreen;
-  display: none;
-  z-index: 100;
-}
-.coming-soon a {
-  color: yellow;
 }
 
 .portrait {
@@ -268,16 +256,28 @@ body, html {
   width: 100%;
 }
 
+.web {
+  position: relative;
+  background-color: black;
+  color: white;
+  border-top: 50px solid #669966;
+  display: none;
+  z-index: 100;
+}
+
 .line-it-up {
   height: 90%;
   background-color: #003300;
   width: 650px;
+  overflow: hidden;
+  position: relative;
+  top: -155px;
 }
 
 .liup-home, .liup-search {
   position: relative;
   float: left;
-  top: -80px;
+  top: 0;
   margin: 5px;
   height: 90%;
 }
@@ -285,7 +285,7 @@ body, html {
 .about_lineItUp {
   color: white;
   position: relative;
-  top: -120px;
+  top: 20px;
 }
 
 .resume-frame {
@@ -297,8 +297,16 @@ body, html {
   /*background-image: url(https://scontent-b-ord.xx.fbcdn.net/hphotos-prn2/t1.0-9/556527_10201656207262682_3025096_n.jpg);
   background-image: url(https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/537007_10201656191622291_1833575693_n.jpg);*/
   /*background-image: url(https://scontent-b-ord.xx.fbcdn.net/hphotos-frc3/t1.0-9/1229993_10201656201342534_1049436629_n.jpg);*/
-);
+}
 
+.coming-soon {
+  position: relative;
+  top: -150px;
+  left: 430px;
+}
+
+.coming-soon a {
+  color: yellow;
 }
 
 .frame-left {
