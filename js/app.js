@@ -79,7 +79,7 @@ function endAnimation(){
     $(".apple-blob").show("fade", 100);
     $(".grey-blob").show("fade", 100);
     $(".portfolio-blob" ).show("fade", 100);
-    $(".black-box").show("fade", 200);
+    // $(".black-box").show("fade", 200);
     $( ".paper" ).show("drop", {direction:"up"}, 500, function(){
       $( ".code" ).show("drop", {direction: "up"}, 500);
     });
@@ -154,7 +154,6 @@ function updateBannerImagePosition(){
     $(ele).css('top', newTop)
   });
 };
-
 
 // function wiggle(ele){ ele
 //   .animate({'left':(pos[0]-10)+'px'},200)

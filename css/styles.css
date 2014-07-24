@@ -228,8 +228,13 @@ body, html {
 .web {
   position: relative;
   background-color: black;
+  color: white;
   border-top: 50px solid limegreen;
   display: none;
+  z-index: 100;
+}
+.coming-soon a {
+  color: yellow;
 }
 
 .portrait {
@@ -266,7 +271,7 @@ body, html {
 .line-it-up {
   height: 90%;
   background-color: #003300;
-  width: 450px;
+  width: 650px;
 }
 
 .liup-home, .liup-search {
@@ -275,6 +280,12 @@ body, html {
   top: -80px;
   margin: 5px;
   height: 90%;
+}
+
+.about_lineItUp {
+  color: white;
+  position: relative;
+  top: -120px;
 }
 
 .resume-frame {
@@ -356,12 +367,22 @@ body, html {
   height: 500px;
 }
 
+.information-block-a {
+  height: 15em;
+  background-color: lightyellow;
+  border-top-right-radius: 50px;
+}
+
 .information-block {
   background-color: transparent;
-  height: 7em;
+  height: 5em;
   margin: 0;
-  padding: 10px;
+  padding: 30px;
   text-align: center;
+
+}
+.information-block h3, h4 {
+  font-family: "Savoye LET"
 }
 
 .image-banner {
@@ -387,7 +408,7 @@ img {
   right: 0px;
   padding: 3px;
   border-radius: 5px;
-  z-index: 100;
+  z-index: 999;
   width: 250px;
 }
 
