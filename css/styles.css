@@ -136,19 +136,11 @@ body, html {
 }
 
 .apple-after {
-  position: absolute;
-  top: 670px;
-  right: 52%;
-  /*visibility: hidden;*/
-  z-index: 101;
-}
-
-.apple-blob-after {
-  position: absolute;
-  zoom: .7;
-  top: 930px;
-  right: 51%;
-  z-index: 100;
+  position: relative;
+  top: 280px;
+  right: 50px;
+  zoom: 1.5;
+  z-index: 20;
 }
 
 .dotted-line {
@@ -207,11 +199,6 @@ body, html {
   border-bottom: 10px solid transparent;
 }
 
-.open {
-  border: 2px dotted black;
-  border-bottom-style: solid;
-}
-
 .black-box {
   position: relative;
   background-color: black;
@@ -254,6 +241,11 @@ body, html {
   height: 250px;
   border-radius: 125px;
   overflow: hidden;
+}
+
+.open {
+  border: 2px dotted black;
+  border-bottom-style: solid;
 }
 
 .portrait img {
@@ -361,7 +353,7 @@ body, html {
 .contact {
   background-color: black;
   color: white;
-  height: 100px;
+  height: 500px;
 }
 
 .information-block {

@@ -44,7 +44,7 @@ function growAppleTrees(){
         $(".grey-blob").show("fade", 1000);
         $(".leaves").show("fade", 1000);
         $( ".portfolio-blob" ).delay(200).show("fade", 2000);
-        $(".web").delay(500).show("drop", {direction: "right"}, 1000)
+        // $(".web").delay(500).show("drop", {direction: "right"}, 1000)
         drawApple('paint');
         $( ".code" ).show("drop", {direction: "up"}, 1000, function(){
           $( ".paper" ).show("drop", {direction:"up"}, 1000, function(){
@@ -155,6 +155,24 @@ function updateBannerImagePosition(){
   });
 };
 
+
+// function wiggle(ele){ ele
+//   .animate({'left':(pos[0]-10)+'px'},200)
+//   .animate({'left':(pos[0]+10)+'px'},200)
+//   .animate({'left':(pos[0])+'px'},200);
+// };
+
+// // function appleRipensandDrops(){
+// //   var scrollTop = $(window).scrollTop();
+// //   if (scrollTop<100)
+// //     $('.apple-cage').wiggle;
+// function apple(){
+//   $('.apple-cage').on({
+//     mouseenter: function(){
+//       $(this).wiggle()
+//     }
+//   })
+// }
 
 
 
