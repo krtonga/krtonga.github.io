@@ -220,7 +220,7 @@ body, html {
 
 .print {
   position: relative;
-  background-color: #C39873;
+  background-color: rgb(44, 36, 22);
   border-top: 50px solid black;
   display: none;
 }
