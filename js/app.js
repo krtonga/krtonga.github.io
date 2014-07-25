@@ -39,22 +39,24 @@ function growAppleTrees(){
   drawTreeLines('paint');
   drawRoots('paint');
   $( ".roots-blob" ).delay(2000).show("fade", 2000, function() {
-    $( ".text" ).show("drop", 4000, function(){
-      $(".text-portfolio").show("fade", 1000, function(){
-        $(".grey-blob").show("fade", 1000);
+    $( ".text" ).show("drop", 4000);
+
+    $( ".portfolio-blob" ).delay(200).show("fade", 4000);
+    $(".text-portfolio").show("fade", 1000, function(){
+      $(".grey-blob").show("fade", 3000);
+      $( ".code" ).delay(1000).show("drop", {direction: "up"}, 1000, function(){
+        $( ".paper" ).show("drop", {direction:"up"}, 1000, function(){
+
         $(".leaves").show("fade", 1000);
-        $( ".portfolio-blob" ).delay(200).show("fade", 2000);
         // $(".web").delay(500).show("drop", {direction: "right"}, 1000)
         drawApple('paint');
-        $( ".code" ).show("drop", {direction: "up"}, 1000, function(){
-          $( ".paper" ).show("drop", {direction:"up"}, 1000, function(){
+          $(".apple-blob").show("fade", 2000 );
+    });
             // $( ".black-box" ).show("fade", 2000);
-            $(".apple-blob").show("fade", 2000 );
-          });
         });
       });
     });
-  });
+  // });
 };
 
 function bringInTheNets(){

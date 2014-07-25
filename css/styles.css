@@ -163,13 +163,13 @@ body, html {
   left: 60px;
   height: 25px;
   z-index: 20;
-  zoom: .5;
-  margin: 20px;
+  zoom: .7;
+  margin-top: 20px;
   display: none;
 }
 .portfolio-blob {
   position: relative;
-  top: -200px;
+  top: -40px;
   width: 100%;
   display: inherit;
   display: none;
@@ -191,9 +191,11 @@ body, html {
 
 .paper {
   /*margin-top: 25px;*/
+  top: -220px;
 }
 
 .code {
+  top: -220px;
   margin-top: -15px;
   padding-bottom: -7px;
   border-bottom: 10px solid transparent;
@@ -329,15 +331,23 @@ body, html {
 .wave {
   position: relative;
   top: -100px;
+  visibility: hidden;
 }
+
+.wave1 {
+  visibility: hidden;
+}
+
 .wave2 {
   position: relative;
   top: -110px;
   left: 445px;
+  visibility: hidden;
 }
 .wave3 {
   position: relative;
   left: 300px;
+  visibility: hidden;
 }
 .fishes {
   position: relative;
@@ -352,7 +362,7 @@ body, html {
 .resume {
   position: relative;
   top: -700px;
-  left: 600px;
+  left: 500px;
   height: 120px;
   z-index: 20;
 }
@@ -382,20 +392,27 @@ body, html {
   border-top-right-radius: 50px;
 }
 
-.information-block {
+.information-block-b {
   background-color: transparent;
   height: 5em;
   margin: 0;
   padding: 30px;
   text-align: center;
+}
 
+.information-block {
+  background-color: transparent;
+  height: 3em;
+  margin: 0;
+  padding: 30px;
+  text-align: center;
 }
 .information-block h3, h4 {
   font-family: "Savoye LET";
 }
 
 .image-banner {
-  height: 12em;
+  height: 10em;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -403,6 +420,11 @@ body, html {
 
 img {
   position: relative;
+}
+
+.magic-text-c {
+  position: relative;
+  left: 80px;
 }
 
 .computer {
@@ -459,8 +481,16 @@ img {
   margin: 30px;
 }
 
+.add-magic h3 {
+  zoom: .8;
+}
 .a-bit-left {
   position: relative;
-  left: 40px;
+  left: 150px;
   z-index: 100;
+}
+
+.wand {
+  position: relative;
+  top: -50px;
 }
