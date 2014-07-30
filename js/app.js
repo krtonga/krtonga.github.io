@@ -180,7 +180,7 @@ function updateBannerImagePosition(){
 
 $(document).ready(function(){
   growAppleTrees();
-  bringInTheNets();
+
   paperTab();
   codeTab();
   closeDialog();
@@ -200,9 +200,9 @@ $(document).ready(function(){
 $(window).on('scroll', function(){
   var scrollTop = $(window).scrollTop();
   // fadeBackgroundColor();
-  // if(scrollTop<100) // just to move somewhat
-  //  $('.apple-cage').css('left', scrollTop);
   updateBannerImagePosition();
+  if(scrollTop>1450)
+    bringInTheNets();
 })
 
 $(window).resize(function(){
