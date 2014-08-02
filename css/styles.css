@@ -112,6 +112,11 @@ body, html {
   z-index: 100;
 }
 
+.apple-cage {
+  position: relative;
+  z-index: 100;
+}
+
 .apple,.apple-blob {
   position: absolute;
   top: 120px;

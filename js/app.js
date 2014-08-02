@@ -180,7 +180,6 @@ function updateBannerImagePosition(){
 
 $(document).ready(function(){
   growAppleTrees();
-
   paperTab();
   codeTab();
   closeDialog();
@@ -203,7 +202,14 @@ $(window).on('scroll', function(){
   updateBannerImagePosition();
   if(scrollTop>1450)
     bringInTheNets();
-})
+  // if(scrollTop>50)
+  //   $('.apple-cage').animate({
+  //     top: "361",
+  //     right: "50",
+  //     opacity: 0.5,
+  //     zoom: 1.3         // is causing weird things...
+  //   }, 4000);
+});
 
 $(window).resize(function(){
   centerNavBar();
