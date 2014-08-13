@@ -82,8 +82,8 @@ function endAnimation(){
     $(".grey-blob").show("fade", 100);
     $(".portfolio-blob" ).show("fade", 100);
     // $(".black-box").show("fade", 200);
-    $( ".paper" ).show("drop", {direction:"up"}, 500, function(){
-      $( ".code" ).show("drop", {direction: "up"}, 500);
+    $( ".code" ).show("drop", {direction:"up"}, 500, function(){
+      $( ".paper" ).show("drop", {direction: "up"}, 500);
     });
 };
 
@@ -111,6 +111,7 @@ function codeTab(){
     }
   });
 };
+
 function paperTab(){
   $('.paper').on({
     mouseenter: function(){
