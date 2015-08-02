@@ -351,6 +351,10 @@ body, html {
   top: 50px;
 }
 
+.para-image {
+  width: 100% !important;
+}
+
 .namorada {
   position: relative;
   left: 25px;
